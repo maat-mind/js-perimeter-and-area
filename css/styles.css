@@ -8,12 +8,19 @@ body {
     padding: 15px;
 }
 
-h1 {
+header h1 {
     text-align: center;
 
     font-size: 4rem;
     font-weight: 400;
 
+    color: #645858;
+}
+
+header p {
+    text-align: center;
+
+    font-size: 1.8rem;
     color: #645858;
 }
 
@@ -37,6 +44,8 @@ main .card {
 }
 
 .figura-nombre {
+    margin-bottom: 50px;
+
     text-align: center;
 
     font-size: 3rem;
@@ -89,4 +98,22 @@ input {
 .area-text input {
     pointer-events: none;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    position: relative;
+    left: calc(50%/2);
+
+    width: 120px;
+    height: 20px;
+    margin: 20px;
+
+    font-size: 1.6rem;
+
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #D9D9D9;
 }
