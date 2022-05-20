@@ -73,15 +73,15 @@ h5 {
 }
 
 #cuadrado-icon {
-    background: url(assets/icons/cuadrado.svg) center/cover no-repeat;
+    background: url(../assets/icons/cuadrado.svg) center/cover no-repeat;
 }
 
 #triangulo-icon {
-    background: url(assets/icons/triangulo.svg) center/cover no-repeat;
+    background: url(../assets/icons/triangulo.svg) center/cover no-repeat;
 }
 
 #circulo-icon {
-    background: url(assets/icons/circulo.svg) center/cover no-repeat;
+    background: url(../assets/icons/circulo.svg) center/cover no-repeat;
 }
 
 input {
@@ -89,6 +89,8 @@ input {
 
     width: 60px;
     height: 20px;
+
+    font-size: 1.6rem;
 
     border: none;
     border-radius: 5px;

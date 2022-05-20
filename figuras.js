@@ -29,7 +29,7 @@ console.log("Los lados del triángulo miden: " + ladoTriangulo1 + "cm y " + lado
 const perimetroTriangulo = (lado1, lado2, base) => lado1 + lado2 + base;
 console.log("El perímetro del triángulo es: " + perimetroTriangulo(ladoTriangulo1, ladoTriangulo2, baseTriangulo) + "cm.");
 
-const areaTriangulo = (base, altura) => (base * altura) / 2;
+const areaTriangulo = (base, altura) => ((base * altura) / 2);
 console.log("El área del triángulo es: " + areaTriangulo(baseTriangulo, alturaTriangulo) + "cm^2.");
 
 console.groupEnd();
@@ -52,3 +52,48 @@ console.log("El área del círculo es: " + areaCirculo(pi, radio) + "cm^2.");
 console.groupEnd();
 
 console.groupEnd();
+
+// calcular cuadrado en html
+
+function calcularCuadrado() {
+  // recibe el valor lado del input en html
+  const lado = parseInt(document.getElementById("lado-cuadrado").value);
+  // ejecuta las funciones para el cálculo del perímetro y área del cuadrado
+  const perimetro = perimetroCuadrado(lado);
+  const area = areaCuadrado(lado);
+
+  // regresa a dos input diferentes el resultado de las funciones
+  document.getElementById("perimetro-cuadrado").value = perimetro;
+  document.getElementById("area-cuadrado").value = area;
+}
+
+// calcular triángulo en html
+
+function calcularTriangulo() {
+  // valores
+  const lado1 = parseInt(document.getElementById("lado1").value);
+  const lado2 = parseInt(document.getElementById("lado2").value);
+  const base = parseInt(document.getElementById("base").value);
+  const altura = parseInt(document.getElementById("altura").value);
+  // funciones
+  const perimetro = perimetroTriangulo(lado1, lado2, base);
+  const area = areaTriangulo(base, altura);
+  // resultado
+  document.getElementById("perimetro-triangulo").value = perimetro;
+  document.getElementById("area-triangulo").value = area;
+}
+
+// calcular triángulo en html
+
+function calcularCirculo() {
+  // valores
+  const diametro = parseInt(document.getElementById("diametro").value);
+  const radio = diametro / 2;
+  const pi = Math.PI;
+  // funciones
+  const perimetro = perimetroCirculo(diametro, pi);
+  const area = areaCirculo(pi, radio);
+  // resultado
+  document.getElementById("perimetro-circulo").value = perimetro;
+  document.getElementById("area-circulo").value = area;
+}

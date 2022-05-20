@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 1366px)"/>
+    <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 1366px)" />
     <title>Curso de JavaScript Intermedio | Platzi</title>
   </head>
   <body>
@@ -20,27 +20,28 @@
       <section class="card" id="cuadrado">
         <form action="">
           <h3 class="figura-nombre">cuadrado<span id="cuadrado-icon"></span></h3>
-          <h5>lado <input id="lado-cuadrado" type="text" /></h5>
-          <h5 class="perimetro-text">perímetro <input type="text" /></h5>
-          <h5 class="area-text">área <input type="text" /></h5>
-          <button>calcular</button>          
+          <h5>lado <input id="lado-cuadrado" type="number" /></h5>
+          <h5 class="perimetro-text">perímetro <input type="number" id="perimetro-cuadrado" /></h5>
+          <h5 class="area-text">área <input type="number" id="area-cuadrado" /></h5>
+          <button type="button" onclick="calcularCuadrado()">calcular</button>
         </form>
       </section>
       <section class="card" id="triangulo">
         <h3 class="figura-nombre">triángulo<span id="triangulo-icon"></span></h3>
-        <h5>lado 1 <input type="text" /></h5>
-        <h5>lado 2 <input type="text" /></h5>
-        <h5>base <input type="text" /></h5>
-        <h5 class="perimetro-text">perímetro <input type="text" /></h5>
-        <h5 class="area-text">área <input type="text" /></h5>
-        <button>calcular</button>
+        <h5>lado 1 <input id="lado1" type="number" /></h5>
+        <h5>lado 2 <input id="lado2" type="number" /></h5>
+        <h5>base <input id="base" type="number" /></h5>
+        <h5>altura <input id="altura" type="number" /></h5>
+        <h5 class="perimetro-text">perímetro <input id="perimetro-triangulo" type="text" /></h5>
+        <h5 class="area-text">área <input id="area-triangulo" type="text" /></h5>
+        <button type="button" onclick="calcularTriangulo()">calcular</button>
       </section>
       <section class="card" id="circulo">
         <h3 class="figura-nombre">círculo<span id="circulo-icon"></span></h3>
-        <h5>diámetro <input type="text" /></h5>
-        <h5 class="perimetro-text">perímetro <input type="text" /></h5>
-        <h5 class="area-text">área <input type="text" /></h5>
-        <button>calcular</button>
+        <h5>diámetro <input id="diametro" type="number" /></h5>
+        <h5 class="perimetro-text">perímetro <input id="perimetro-circulo" type="text" /></h5>
+        <h5 class="area-text">área <input id="area-circulo" type="text" /></h5>
+        <button type="button" onclick="calcularCirculo()">calcular</button>
       </section>
     </main>
     <script src="./figuras.js"></script>
